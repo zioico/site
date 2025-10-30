@@ -27,29 +27,15 @@ for fp in html_files:
 
     # Handle data-image:
     # If it appears inside an <img ...> tag -> src=
-    # Else -> add/merge style="background-image:url(...)"
-    out = []
-    i = 0
-    for m in data_image_attr.finditer(txt):
-        start, end = m.span()
-        url = httpsify(m.group(2))
-        before = txt[max(0, start-200):start].lower()
-        after  = txt[end:min(len(txt), end+200)].lower()
-        is_img_context = ('<img' in befo        i<i        is_img_context = ('<img' in te        is_img_context = ('<img' in befo        i<i        is_img_contextap        is_img_context = ('<img' in befo        i<i        is_img_contexr safer style merge
-            tag_start = txt.rfind('<', 0, start)
-            tag_end   = txt.find('>', end)
-            if tag_start != -1 and tag_end != -1:
-                tag_txt = txt[tag_start:tag_end]
-                style_m = re.search(r'style=(["\'])(.*?)\1', tag_txt, re.I|re.S)
-                if style_m:
-                    old_style = style_m.group(2).strip()
-                    new_style = old_style
-                    if 'background-image' not in old_style:
-                        if not new_style.endswith(';') and new_style != '':
-                            new_style += ';'
-                        new_style += f'background-image:url({url})'
-                    style_new_attr = f'style="{new_style}"'
-                    tag_txt_new = (tag_txt[:style_m.start()] + style_new_attr + tag_txt[style_m.end():])
+    # Else -> add/merge style="background-image:ur    # Else -> add/merge style="backgor     # Else -> addttr    #iter(txt):
+        s        s        s        s        s        s.gr                  s        s        s        s start].lower()
+        after  =        after  =        after  =  ower()
+        is_img_context = ('<img' in before) or ('<img' in after)
+
+        if is_img_conte        if is_img_conte        if is_img_conte        if is_img_conte  o ap        if is_img_conte        if is_img_conte        if is_img_conte     s        if is_img_conte        if is_img_conte        if is_img_conte              nd   = txt.find        if is_img_conte        if is_img_conte        if -1:
+                                 _start:tag_end]
+                style_m = re.search(r'style=(["\'])(.*?)\1', ta                style_m = re.search(r'style=(["\'])                  style_m = re.search(r'style=(["\'])(.*?)\1', ta                s= old_style
+                                                                                                                                                                                                                                                                                                                                         tag_txt_new = (tag_txt[:style_m.start()] + style_new_attr + tag_txt[style_m.end():])
                 else:
                     style_new_attr = f'style="background-image:url({url})"'
                     # insert style right after tag name
