@@ -1,0 +1,14 @@
+/* Simple centered slideshow wrapper */
+#fi-wrap{max-width:1200px;width:min(92vw,1200px);margin:24px auto;position:relative}
+.fi-slideshow{position:relative;overflow:hidden}
+.fi-slideshow .slide{display:none}
+.fi-slideshow .slide.active{display:block}
+.fi-slideshow img{display:block;width:100%;height:auto;object-fit:contain;margin:0 auto}
+
+/* Controls */
+.fi-controls{position:absolute;top:50%;left:0;right:0;transform:translateY(-50%);
+  display:flex;justify-content:space-between;padding:0 8px;pointer-events:none}
+.fi-button{pointer-events:auto;border:0;border-radius:12px;padding:8px 12px;
+  font-size:24px;background:rgba(0,0,0,.45);color:#fff;cursor:pointer}
+@media (hover:hover){.fi-button:hover{background:rgba(0,0,0,.6)}}
+
