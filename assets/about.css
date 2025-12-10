@@ -1,0 +1,5 @@
+/* Hide the phone-number image block on the About page */
+#block-ce964fe0b03d27f2c0ae {
+  display: none !important;
+}
+
