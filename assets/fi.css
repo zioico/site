@@ -1,14 +1,59 @@
-/* Simple centered slideshow wrapper */
-#fi-wrap{max-width:1200px;width:min(92vw,1200px);margin:24px auto;position:relative}
-.fi-slideshow{position:relative;overflow:hidden}
-.fi-slideshow .slide{display:none}
-.fi-slideshow .slide.active{display:block}
-.fi-slideshow img{display:block;width:100%;height:auto;object-fit:contain;margin:0 auto}
+#fi-wrap{
+  max-width:1200px;
+  width:min(92vw,1200px);
+  margin:24px auto;
+  position:relative;
+}
 
-/* Controls */
-.fi-controls{position:absolute;top:50%;left:0;right:0;transform:translateY(-50%);
-  display:flex;justify-content:space-between;padding:0 8px;pointer-events:none}
-.fi-button{pointer-events:auto;border:0;border-radius:12px;padding:8px 12px;
-  font-size:24px;background:rgba(0,0,0,.45);color:#fff;cursor:pointer}
-@media (hover:hover){.fi-button:hover{background:rgba(0,0,0,.6)}}
+/* Centered slideshow that never crops */
+.fi-slideshow{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:70vh;
+  overflow:hidden;
+}
 
+.fi-slideshow .slide{
+  display:none;
+  width:100%;
+}
+
+.fi-slideshow .slide.active{
+  display:block;
+}
+
+/* Key: contain + auto sizing (no crop) */
+.fi-slideshow img{
+  display:block;
+  margin:0 auto;
+  max-width:100%;
+  max-height:85vh;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+}
+
+.fi-controls{
+  position:absolute;
+  top:50%;
+  left:0;
+  right:0;
+  transform:translateY(-50%);
+  display:flex;
+  justify-content:space-between;
+  padding:0 8px;
+  pointer-events:none;
+}
+
+.fi-button{
+  pointer-events:auto;
+  border:0;
+  border-radius:12px;
+  padding:8px 12px;
+  font-size:24px;
+  background:rgba(0,0,0,.45);
+  color:#fff;
+  cursor:pointer;
+}
