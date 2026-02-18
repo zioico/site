@@ -1,0 +1,18 @@
+/* Stop Squarespace slideshow/gallery from cropping images.
+   Scope to gallery pages so About/Contact images aren't affected. */
+
+.collection-type-gallery #slideshowWrapper img,
+.collection-type-gallery #slideshow img,
+.collection-type-gallery #slideshowWrapper .slide img,
+.collection-type-gallery #slideshow .slide img {
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+/* Some Squarespace templates render slides as backgrounds */
+.collection-type-gallery #slideshowWrapper .slide,
+.collection-type-gallery #slideshow .slide {
+  background-size: contain !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
