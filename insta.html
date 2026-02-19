@@ -2,76 +2,264 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Instagram Feed</title>
-  <style>
-    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: #0b0b0b; color: #eee; }
-    header { padding: 18px 18px 10px; display:flex; align-items:baseline; justify-content:space-between; gap:12px; }
-    header a { color:#eee; text-decoration:none; opacity:.9; }
-    header a:hover { opacity:1; text-decoration:underline; }
-    .sub { opacity:.75; font-size: 14px; }
-    .grid { padding: 18px; display:grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
-    .card { display:block; background:#111; border-radius: 10px; overflow:hidden; border:1px solid rgba(255,255,255,.06); }
-    .card img { width:100%; height:260px; object-fit: contain; background:#111; display:block; }
-    .cap { padding: 10px 12px 12px; font-size: 13px; line-height: 1.35; opacity: .85; }
-    .cap .date { display:block; opacity:.65; font-size: 12px; margin-top: 6px; }
-    .err { padding: 18px; color: #ffb4b4; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Instagram — Local Cache</title>
+
+  <!-- BEGIN SITE_HEAD_INCLUDES -->
+  <link rel="preconnect" href="https://images.squarespace-cdn.com">
+  <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+  <link rel="preconnect" href="https://p.typekit.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel:ital,wght@0,400">
+  <link rel="stylesheet" type="text/css" href="https://static1.squarespace.com/static/sitecss/5ba583b4e8ba445131ad62da/75/4fd11f32c4aad9b01c9e624c/5c7fc59ce4966b8337d6a795/1362/site.css"/>
+  <link rel="stylesheet" href="assets/nocrop-slideshow.css">
+  <link rel="stylesheet" href="assets/site-fixes.css">
+  <!-- END SITE_HEAD_INCLUDES -->
+
+  <link rel="stylesheet" href="/assets/instagram/insta.css" />
 </head>
+
 <body>
-  <header>
-    <div>
-      <div style="font-size:18px;">Instagram</div>
-      <div class="sub">Local cache from @zioico (update by running the script)</div>
-    </div>
-    <div>
-      <a href="https://www.instagram.com/zioico/" target="_blank" rel="noopener">Open on Instagram</a>
-    </div>
-  </header>
+  <!-- BEGIN SITE_NAV -->
+  <header id="header">
+      <div id="logo" data-content-field="site-title">
+        
+        <h1 class="logo"><a href="index.html">Federico Maria Salvatore Ienna</a></h1>
+        
+        
+      </div>
+      <script type="module">
+        Y.use('squarespace-ui-base', function(Y) {
+          Y.all("#header .logo, #header .logo-subtitle").each(function (text) {
+            text.plug(Y.Squarespace.TextShrink, {
+              parentEl: Y.one('#header'),
+              triggerWidth: 750
+            });
+          });
+        });
 
-  <div id="grid" class="grid"></div>
-  <div id="err" class="err" style="display:none;"></div>
-
-  <script>
-    async function main(){
-      const grid = document.getElementById('grid');
-      const err = document.getElementById('err');
-
-      try {
-        const r = await fetch('assets/instagram/feed.json', {cache: 'no-store'});
-        if(!r.ok) throw new Error('Could not load assets/instagram/feed.json (status ' + r.status + ')');
-        const data = await r.json();
-
-        for (const item of data) {
-          const a = document.createElement('a');
-          a.className = 'card';
-          a.href = item.url;
-          a.target = '_blank';
-          a.rel = 'noopener';
-
-          const img = document.createElement('img');
-          img.loading = 'lazy';
-          img.src = item.image;
-          img.alt = item.caption || 'Instagram post';
-
-          const cap = document.createElement('div');
-          cap.className = 'cap';
-          cap.textContent = item.caption || '';
-          const d = document.createElement('span');
-          d.className = 'date';
-          d.textContent = item.date_utc ? ('UTC: ' + item.date_utc.slice(0,10)) : '';
-          cap.appendChild(d);
-
-          a.appendChild(img);
-          a.appendChild(cap);
-          grid.appendChild(a);
+        // Show spinner on page load if loading bookmarked url
+        if (window.location.hash && window.location.hash !== '#') {
+          document.querySelector('body').className += ' index-loading';
         }
-      } catch(e) {
-        err.style.display = '';
-        err.textContent = 'Error: ' + e.message + '\n\nDid you run: python3 tools/update_instagram_feed.py --handle zioico ?';
-      }
-    }
-    main();
-  </script>
+      </script>
+      <div id="topNav" data-content-field="navigation">
+<nav class="main-nav">
+  <ul>
+  
+  
+
+      <li class="gallery-collection active-link">
+
+        
+
+          
+            <a href="index.html">Home</a>
+          
+
+          
+
+
+        
+
+      </li>
+
+  
+
+      <li class="folder-collection">
+
+        
+          
+          <a onclick="">Projects</a>
+          <div class="subnav">
+            <ul>
+              
+                
+                  <li class="gallery-collection">
+                    <a href="https://www.federicoienna.com/in-other-words">In Other Words</a>
+                  </li>
+                
+                
+              
+                
+                  <li class="gallery-collection">
+                    <a href="us-and-them.html">Us and Them</a>
+                  </li>
+                
+                
+              
+                
+                  <li class="gallery-collection">
+                    <a href="https://www.federicoienna.com/enfim">Enfim</a>
+                  </li>
+                
+                
+              
+                
+                  <li class="gallery-collection">
+                    <a href="radiation.html">Radiation</a>
+                  </li>
+                
+                
+              
+                
+                  <li class="gallery-collection">
+                    <a href="https://www.federicoienna.com/notes-to-self">Notes to Self</a>
+                  </li>
+                
+                
+              
+            </ul>
+          </div>
+
+        
+
+      </li>
+
+  
+
+      <li class="page-collection">
+
+        
+
+          
+            <a href="albums.html">Short Film</a>
+          
+
+          
+
+
+        
+
+      </li>
+
+  
+
+      <li class="blog-collection">
+
+        
+
+          
+            <a href="https://www.federicoienna.com/words">Words</a>
+          
+
+          
+
+
+        
+
+      </li>
+
+  
+
+      <li class="page-collection">
+
+        
+
+          
+            <a href="insta.html">Instagram Feed</a>
+          
+
+          
+
+
+        
+
+      </li>
+
+  
+
+      <li class="page-collection">
+
+        
+
+          
+            <a href="https://www.federicoienna.com/about">About</a>
+          
+
+          
+
+
+        
+
+      </li>
+
+  
+
+      <li class="page-collection">
+
+        
+
+          
+            <a href="https://www.federicoienna.com/contact">Contact</a>
+          
+
+          
+
+
+        
+
+      </li>
+
+  
+  
+  
+  </ul>
+</nav>
+</div>
+
+    </header>
+  <!-- END SITE_NAV -->
+
+  <main class="page">
+    <section class="hero">
+      <div>
+        <h1>Instagram</h1>
+        <p>
+          Local cache from <strong>@zioico</strong>. Click any image to browse in a lightbox.
+        </p>
+      </div>
+
+      <div class="controls" aria-label="View controls">
+        <button class="btn" id="btn-grid" aria-pressed="true" type="button">Grid</button>
+        <button class="btn" id="btn-feed" aria-pressed="false" type="button">Feed</button>
+        <a class="btn" href="https://www.instagram.com/zioico/" target="_blank" rel="noopener">Open Instagram</a>
+      </div>
+    </section>
+
+    <div class="stories" id="ig-stories" aria-label="Stories"></div>
+
+    <div class="hr"></div>
+
+    <section class="grid" id="ig-grid" aria-label="Instagram posts"></section>
+
+    <div class="loading" id="ig-status">Loading…</div>
+    <div id="ig-sentinel" style="height: 1px;"></div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lb" id="lb" aria-hidden="true">
+    <div class="lb-inner" role="dialog" aria-modal="true" aria-label="Instagram viewer">
+      <div class="lb-bar">
+        <div class="left">
+          <button class="lb-x" id="lb-close" type="button">Close</button>
+          <span class="kbd">Esc</span>
+          <span class="kbd">← →</span>
+        </div>
+        <div class="right">
+          <span id="lb-date" class="kbd"></span>
+          <a class="lb-a" id="lb-link" target="_blank" rel="noopener">View on Instagram</a>
+          <button class="lb-nav" id="lb-prev" type="button">Prev</button>
+          <button class="lb-nav" id="lb-next" type="button">Next</button>
+        </div>
+      </div>
+
+      <div class="lb-frame">
+        <img class="lb-img" id="lb-img" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/instagram/insta.js"></script>
 </body>
 </html>
