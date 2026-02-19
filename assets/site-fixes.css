@@ -1,0 +1,24 @@
+/* --- Slideshow: never crop images --- */
+#slideshowWrapper #slideshow .slide img{
+  object-fit: contain !important;
+  object-position: 50% 50% !important;
+
+  /* Most “cover” implementations force both dimensions.
+     Keep them, but with contain => no crop. */
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* If any slide is implemented as a background image, don't crop that either */
+#slideshowWrapper #slideshow .slide{
+  background-size: contain !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Optional: give the slideshow a predictable viewport height */
+#slideshowWrapper{
+  /* tweak if you want: 70–85vh are typical */
+  height: 80vh;
+  max-height: 80vh;
+}
