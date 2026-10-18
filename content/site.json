@@ -1,0 +1,978 @@
+{
+  "name": "Federico Maria Salvatore Ienna",
+  "url": "https://www.federicoienna.com",
+  "instagram": "zioico",
+  "email": "fed.ienna.ph@gmail.com",
+  "projects": [
+    "in-other-words",
+    "us-and-them",
+    "enfim",
+    "radiation",
+    "notes-to-self"
+  ],
+  "pages": [
+    {
+      "slug": "index",
+      "title": "Home",
+      "blocks": [],
+      "images": [
+        {
+          "src": "assets/photos/ienna-federico-02-3a2c3c6d.webp",
+          "alt": "Ienna_Federico_02.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/02-img-scan-20180907-0006-1-1800px-srgb-5ea707e0.webp",
+          "alt": "02__img_scan_20180907_0006_1_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/ienna-federico-03-808142a5.webp",
+          "alt": "Ienna_Federico_03.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/ienna-federico-04-3ecf7dde.webp",
+          "alt": "Ienna_Federico_04.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/13-ief2019006z0023b-10-1800px-srgb-c34328b0.webp",
+          "alt": "13__IEF2019006Z0023b-10_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/ienna-federico-05-a1e3d6b7.webp",
+          "alt": "Ienna_Federico_05.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/ienna-federico-06-af19f0bc.webp",
+          "alt": "Ienna_Federico_06.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/ienna-federico-09-e60bd028.webp",
+          "alt": "Ienna_Federico_09.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/ienna-federico-10-2ad81d21.webp",
+          "alt": "Ienna_Federico_10.jpg",
+          "width": 1286,
+          "height": 1500
+        },
+        {
+          "src": "assets/photos/img-scan-20180911-0009-sm-53808af6.webp",
+          "alt": "img_scan_20180911_0009_sm.jpg",
+          "width": 1500,
+          "height": 1198
+        },
+        {
+          "src": "assets/photos/ipf-edic-a-o-diario-de-ferias-roll-0734-img-scan-20180907-0009-sm-6450e39c.webp",
+          "alt": "IPF_Edição_Diario-de-Ferias_Roll-0734_img_scan_20180907_0009_sm.jpg",
+          "width": 1500,
+          "height": 1212
+        },
+        {
+          "src": "assets/photos/02-ief2019004k00003-05-final-1800px-srgb-bf92b2b4.webp",
+          "alt": "02__IEF2019004K00003-05_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/04-ief2019004z00005-02-final-1800px-srgb-0bd435af.webp",
+          "alt": "04__IEF2019004Z00005-02_final_1800px_sRGB.jpg",
+          "width": 1543,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/03-ief2019004k00003-06-final-1800px-srgb-eb69411e.webp",
+          "alt": "03__IEF2019004K00003-06_final_1800px_sRGB.jpg",
+          "width": 1543,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/18-ief2019004z0011-04-final-1800px-srgb-47737e3a.webp",
+          "alt": "18__IEF2019004Z0011-04_final_1800px_sRGB.jpg",
+          "width": 1543,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/13-ief2019004z0011-07-final-1800px-srgb-8c50319c.webp",
+          "alt": "13__IEF2019004Z0011-07_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/07-ief2019004k00007-08-final-1800px-srgb-c021094b.webp",
+          "alt": "07__IEF2019004K00007-08_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/11-ief2019004z0015-03-1800px-srgb-2df4d5e1.webp",
+          "alt": "11__IEF2019004Z0015-03_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/20-federico-maria-salvatore-ienna-ipf-fai-projecto-final-croma-tica-co-e2b73e0b.webp",
+          "alt": "20_Federico-Maria-Salvatore-Ienna_IPF-FAI_Projecto-Final_Cromática-Cor_img_scan_20181017_0011_sm.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/img-scan-20181015-0005-1800px-srgb-aa46254e.webp",
+          "alt": "img_scan_20181015_0005_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/17-federico-maria-salvatore-ienna-ipf-fai-projecto-final-texturas-e-ma-20007dc9.webp",
+          "alt": "17_Federico-Maria-Salvatore-Ienna_IPF-FAI_Projecto-Final_Texturas-e-Materiais_img_scan_20181015_0006_sm.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/21-ief2019004z00005-05-final-1800px-srgb-a6bbc7c1.webp",
+          "alt": "21__IEF2019004Z00005-05_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/ief2019005w00001-01-1800px-srgb-991f12c0.webp",
+          "alt": "IEF2019005W00001-01_1800px_sRGB.jpg",
+          "width": 1455,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/ef01-20191215-0009-1800px-srgb-cc26b9b1.webp",
+          "alt": "EF01_20191215_0009_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/ief2019005w00001-05-1800px-srgb-c49d4f84.webp",
+          "alt": "IEF2019005W00001-05_1800px_sRGB.jpg",
+          "width": 1426,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/ief2019005w00001-06-1800px-srgb-f0d763f4.webp",
+          "alt": "IEF2019005W00001-06_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/ief2019005w00001-08-1800px-srgb-dc1c6175.webp",
+          "alt": "IEF2019005W00001-08_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1451
+        }
+      ]
+    },
+    {
+      "slug": "in-other-words",
+      "title": "In Other Words",
+      "blocks": [
+        "in-other-words-1.html",
+        "in-other-words-2.html",
+        "in-other-words-3.html"
+      ],
+      "images": [
+        {
+          "src": "assets/photos/00-print-20130707-0017-767194b3.webp",
+          "alt": "00__Print_20130707_0017.jpg",
+          "width": 1500,
+          "height": 1497
+        },
+        {
+          "src": "assets/photos/02-img-scan-20180907-0006-1-99ff17a3.webp",
+          "alt": "02__img_scan_20180907_0006_1.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/03-img-scan-20180907-0008-f6a0369b.webp",
+          "alt": "03__img_scan_20180907_0008.jpg",
+          "width": 1286,
+          "height": 1500
+        },
+        {
+          "src": "assets/photos/04-img-scan-20180907-0005-560e7578.webp",
+          "alt": "04__img_scan_20180907_0005.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/05-img-scan-20180914-0001-857bef3c.webp",
+          "alt": "05__img_scan_20180914_0001.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/06-ief2019006z0028-08-b75b6bed.webp",
+          "alt": "06__IEF2019006Z0028-08.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/07-ief2019006z00011-06-16a2783e.webp",
+          "alt": "07__IEF2019006Z00011-06.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/09-ief2019006z0002-09-6f3a98db.webp",
+          "alt": "09__IEF2019006Z0002-09.jpg",
+          "width": 1286,
+          "height": 1500
+        },
+        {
+          "src": "assets/photos/10-img-scan-20180906-0004-c7d6e4fc.webp",
+          "alt": "10__img_scan_20180906_0004.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/11-img-scan-20180906-0005-b9d81bb8.webp",
+          "alt": "11__img_scan_20180906_0005_.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/12-ief2019006z0023b-08-7d6e9b25.webp",
+          "alt": "12__IEF2019006Z0023b-08.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/13-ief2019006z0023b-10-82252375.webp",
+          "alt": "13__IEF2019006Z0023b-10.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/14-ief2019006z0005-10-cde1dd50.webp",
+          "alt": "14__IEF2019006Z0005-10.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/15-ief2019006z0032-09-ab3be214.webp",
+          "alt": "15__IEF2019006Z0032-09.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/36-ief2019006z0007-02-e8f2af5d.webp",
+          "alt": "36__IEF2019006Z0007-02.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/17-ief2019006z00012b-03-a8f852c2.webp",
+          "alt": "17__IEF2019006Z00012b-03.jpg",
+          "width": 1500,
+          "height": 1285
+        },
+        {
+          "src": "assets/photos/18-ief2019006z0026-02-b9fb3f8a.webp",
+          "alt": "18__IEF2019006Z0026-02.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/19-ief2019006z0032-07-a383f41b.webp",
+          "alt": "19__IEF2019006Z0032-07.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/01-ief2019006z0027-09-14465369.webp",
+          "alt": "01__IEF2019006Z0027-09.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/21-ief2019006z0026-05-36b86121.webp",
+          "alt": "21__IEF2019006Z0026-05.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/22-ief2019006z0017-02-aca9002b.webp",
+          "alt": "22__IEF2019006Z0017-02.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/23-ief2019006z0001-06-590b4fb2.webp",
+          "alt": "23__IEF2019006Z0001-06.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/24-ief2019006z00012b-06-5b6cde18.webp",
+          "alt": "24__IEF2019006Z00012b-06.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/25-ief2019006z0018-02-e9c7bfc0.webp",
+          "alt": "25__IEF2019006Z0018-02.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/26-ief2019006z00012b-07-4f2a1483.webp",
+          "alt": "26__IEF2019006Z00012b-07.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/27-ief2019006z0017-07-8f1cae93.webp",
+          "alt": "27__IEF2019006Z0017-07.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/28-ief2019006z0005-04-9a1dcece.webp",
+          "alt": "28__IEF2019006Z0005-04.jpg",
+          "width": 1223,
+          "height": 1500
+        },
+        {
+          "src": "assets/photos/29-ief2019006z0025-03-96de9c84.webp",
+          "alt": "29__IEF2019006Z0025-03.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/30-ief2019006z000x-08-e6666543.webp",
+          "alt": "30__IEF2019006Z000X-08.jpg",
+          "width": 1500,
+          "height": 1285
+        },
+        {
+          "src": "assets/photos/31-ief2019006z0031-09-182b4c36.webp",
+          "alt": "31__IEF2019006Z0031-09.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/32-ief2019006z0031-05-61ab9786.webp",
+          "alt": "32_IEF2019006Z0031-05.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/ienna-federico-10-af484974.webp",
+          "alt": "Ienna_Federico_10.jpg",
+          "width": 1286,
+          "height": 1500
+        },
+        {
+          "src": "assets/photos/43-seattle-20190607-0001-a16b46c5.webp",
+          "alt": "43__Seattle_20190607_0001.jpg",
+          "width": 1500,
+          "height": 1340
+        }
+      ],
+      "detail_images": [
+        {
+          "src": "assets/photos/dsc4432-c3fbd5f5.webp",
+          "alt": "_DSC4432.jpg",
+          "width": 1500,
+          "height": 1000
+        },
+        {
+          "src": "assets/photos/dsc4371-3082190f.webp",
+          "alt": "_DSC4371.JPG",
+          "width": 2500,
+          "height": 1669
+        },
+        {
+          "src": "assets/photos/dsc4479-d8af2677.webp",
+          "alt": "_DSC4479.jpg",
+          "width": 1500,
+          "height": 1001
+        },
+        {
+          "src": "assets/photos/dsc4410-7f5c34ec.webp",
+          "alt": "_DSC4410.jpg",
+          "width": 1500,
+          "height": 1000
+        },
+        {
+          "src": "assets/photos/dsc4474-5acc5e02.webp",
+          "alt": "_DSC4474.jpg",
+          "width": 1500,
+          "height": 1001
+        },
+        {
+          "src": "assets/photos/dsc4461-2d503881.webp",
+          "alt": "_DSC4461.JPG",
+          "width": 2500,
+          "height": 1669
+        },
+        {
+          "src": "assets/photos/dsc4471-09a7fa0d.webp",
+          "alt": "_DSC4471.jpg",
+          "width": 1500,
+          "height": 1001
+        }
+      ]
+    },
+    {
+      "slug": "us-and-them",
+      "title": "Us and Them",
+      "blocks": ["us-and-them-1.html", "us-and-them-2.html"],
+      "images": [
+        {
+          "src": "assets/photos/02-ief2019004k00003-05-final-1800px-srgb-39c379a1.webp",
+          "alt": "02__IEF2019004K00003-05_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/04-ief2019004z00005-02-final-1800px-srgb-ba6eec0d.webp",
+          "alt": "04__IEF2019004Z00005-02_final_1800px_sRGB.jpg",
+          "width": 1543,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/03-ief2019004k00003-06-final-1800px-srgb-65acf6fb.webp",
+          "alt": "03__IEF2019004K00003-06_final_1800px_sRGB.jpg",
+          "width": 1543,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/06-ief2019004z0015-10-final-1800px-srgb-3dd7e473.webp",
+          "alt": "06__IEF2019004Z0015-10-final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/07-ief2019004k00007-08-final-1800px-srgb-61df49a7.webp",
+          "alt": "07__IEF2019004K00007-08_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/08-ief2019004k00004-06-final-1800px-srgb-cc661b75.webp",
+          "alt": "08__IEF2019004K00004-06_final_1800px_sRGB.jpg",
+          "width": 1543,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/10-ief2019004z0014-03-final-1800px-srgb-f8d50e85.webp",
+          "alt": "10__IEF2019004Z0014-03_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/11-ief2019004z0015-03-1800px-srgb-2107e54e.webp",
+          "alt": "11__IEF2019004Z0015-03_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/12-ief2019004z0011-08-final-1800px-srgb-a0e5e9d7.webp",
+          "alt": "12__IEF2019004Z0011-08_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/13-ief2019004z0011-07-final-1800px-srgb-e475591c.webp",
+          "alt": "13__IEF2019004Z0011-07_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/14-ief2019004z0013-04-final-1800px-srgb-89b3d103.webp",
+          "alt": "14__IEF2019004Z0013-04_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/15-ief2019004z0011-01-final-1800px-srgb-235ed4f3.webp",
+          "alt": "15__IEF2019004Z0011-01_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/16-ief2019004z0013-01-final-1800px-srgb-79223c7c.webp",
+          "alt": "16__IEF2019004Z0013-01_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/17-ief2019004z00002-08-final-1800px-srgb-a9dd0c52.webp",
+          "alt": "17__IEF2019004Z00002-08_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/18-ief2019004z0011-04-final-1800px-srgb-7787a2cf.webp",
+          "alt": "18__IEF2019004Z0011-04_final_1800px_sRGB.jpg",
+          "width": 1543,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/19-ief2019004g00072-final-1800px-srgb-9bf8d67c.webp",
+          "alt": "19__IEF2019004G00072_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/06-federico-maria-salvatore-ienna-ipf-fai-projecto-final-3-pontos-de-f-d1685ecc.webp",
+          "alt": "06_Federico-Maria-Salvatore-Ienna_IPF-FAI_Projecto-Final_3-Pontos-de-Fuga_img_scan_20181016_0004_sm.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/21-ief2019004z00005-05-final-1800px-srgb-e4eef373.webp",
+          "alt": "21__IEF2019004Z00005-05_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/01-federico-maria-salvatore-ienna-ipf-fai-projecto-final-1-ponto-de-fu-8bfee327.webp",
+          "alt": "01_Federico-Maria-Salvatore-Ienna_IPF-FAI_Projecto-Final_1-Ponto-de-Fuga_img_scan_20181015_0002_sm.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/23-ief2019004z00002-02-final-1800px-srgb-baedfa2d.webp",
+          "alt": "23__IEF2019004Z00002-02_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/17-federico-maria-salvatore-ienna-ipf-fai-projecto-final-texturas-e-ma-ca8b99cd.webp",
+          "alt": "17_Federico-Maria-Salvatore-Ienna_IPF-FAI_Projecto-Final_Texturas-e-Materiais_img_scan_20181015_0006_sm.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/img-scan-20181015-0005-sm-7724412a.webp",
+          "alt": "img_scan_20181015_0005_sm.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/img-scan-20181017-0012-sm-b5b1255e.webp",
+          "alt": "img_scan_20181017_0012_sm.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/20-federico-maria-salvatore-ienna-ipf-fai-projecto-final-croma-tica-co-ef82807a.webp",
+          "alt": "20_Federico-Maria-Salvatore-Ienna_IPF-FAI_Projecto-Final_Cromática-Cor_img_scan_20181017_0011_sm.jpg",
+          "width": 1500,
+          "height": 1286
+        },
+        {
+          "src": "assets/photos/25-ief2019004k00003-08-final-1800px-srgb-8516678c.webp",
+          "alt": "25__IEF2019004K00003-08_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/26-ief2019004z0012-10-final-1800px-srgb-2c6a9a9d.webp",
+          "alt": "26__IEF2019004Z0012-10_final_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        }
+      ]
+    },
+    {
+      "slug": "enfim",
+      "title": "Enfim",
+      "blocks": ["enfim-1.html", "enfim-2.html"],
+      "images": [
+        {
+          "src": "assets/photos/ief2019005w00001-01-1800px-srgb-00fbf110.webp",
+          "alt": "IEF2019005W00001-01_1800px_sRGB.jpg",
+          "width": 1455,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/ief2019005w00001-06-1800px-srgb-2d6687b3.webp",
+          "alt": "IEF2019005W00001-06_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/ef01-20191215-0009-1800px-srgb-a1b0db98.webp",
+          "alt": "EF01_20191215_0009_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/tn01-20191201-0005-1800px-srgb-6c3e7248.webp",
+          "alt": "TN01_20191201_0005_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1439
+        },
+        {
+          "src": "assets/photos/ief2019005w00001-05-1800px-srgb-0cd39257.webp",
+          "alt": "IEF2019005W00001-05_1800px_sRGB.jpg",
+          "width": 1426,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/tn01-20191201-0007-1800px-srgb-302a0035.webp",
+          "alt": "TN01_20191201_0007_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1445
+        },
+        {
+          "src": "assets/photos/ef01-20191215-0008-1800px-srgb-85371e08.webp",
+          "alt": "EF01_20191215_0008_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1543
+        },
+        {
+          "src": "assets/photos/ief2019005w00001-08-1800px-srgb-871dd500.webp",
+          "alt": "IEF2019005W00001-08_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1451
+        },
+        {
+          "src": "assets/photos/ief2019005w00001-10-1800px-srgb-e1da71f4.webp",
+          "alt": "IEF2019005W00001-10_1800px_sRGB.jpg",
+          "width": 1457,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/ief2019005w00001-09-1800px-srgb-0a9b6caa.webp",
+          "alt": "IEF2019005W00001-09_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1447
+        },
+        {
+          "src": "assets/photos/tn02-20191201-0008-1800px-srgb-da29bfee.webp",
+          "alt": "TN02_20191201_0008_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1445
+        }
+      ]
+    },
+    {
+      "slug": "radiation",
+      "title": "Radiation",
+      "blocks": ["radiation-1.html", "radiation-2.html"],
+      "images": [
+        {
+          "src": "assets/photos/ief2019006z000x-07-6271189c.webp",
+          "alt": "IEF2019006Z000X-07.jpg",
+          "width": 0,
+          "height": 0
+        },
+        {
+          "src": "assets/photos/ief2019006z000x-01-fullres-b7fa6ca2.webp",
+          "alt": "IEF2019006Z000X-01_fullres.jpg",
+          "width": 2945,
+          "height": 2402
+        },
+        {
+          "src": "assets/photos/ief2019006z000x-02-fullres-02ed20f9.webp",
+          "alt": "IEF2019006Z000X-02_fullres.jpg",
+          "width": 2951,
+          "height": 2407
+        },
+        {
+          "src": "assets/photos/ief2019006z000x-04-fullres-0648586b.webp",
+          "alt": "IEF2019006Z000X-04_fullres.jpg",
+          "width": 2407,
+          "height": 2951
+        },
+        {
+          "src": "assets/photos/ief2019006z000x-05-fullres-f6be5dab.webp",
+          "alt": "IEF2019006Z000X-05_fullres.jpg",
+          "width": 2951,
+          "height": 2407
+        },
+        {
+          "src": "assets/photos/ief2019006z000x-06-fullres-f9c1e382.webp",
+          "alt": "IEF2019006Z000X-06_fullres.jpg",
+          "width": 2645,
+          "height": 2157
+        },
+        {
+          "src": "assets/photos/ief2019006z000x-07-fullres-23e15830.webp",
+          "alt": "IEF2019006Z000X-07_fullres.jpg",
+          "width": 2937,
+          "height": 2396
+        },
+        {
+          "src": "assets/photos/ief2019006z000x-09-fullres-2ef877f3.webp",
+          "alt": "IEF2019006Z000X-09_fullres.jpg",
+          "width": 2804,
+          "height": 2403
+        }
+      ]
+    },
+    {
+      "slug": "notes-to-self",
+      "title": "Notes to Self",
+      "blocks": ["notes-to-self-1.html", "notes-to-self-2.html"],
+      "images": [
+        {
+          "src": "assets/photos/01-sx70-11-nov-2020-back-1800px-srgb-c6d9b78d.webp",
+          "alt": "01_SX70_11-Nov-2020_BACK_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/02-sx70-11-nov-2020-front-1800px-srgb-86235db1.webp",
+          "alt": "02_SX70_11-Nov-2020_FRONT_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/01-sx70-17-nov-2020-1430-back-1800px-srgb-86aa1daf.webp",
+          "alt": "01_SX70_17-Nov-2020__1430_BACK_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/02-sx70-12-nov-2020-1700-front-1800px-srgb-0795adb0.webp",
+          "alt": "02_SX70_12-Nov-2020_1700_FRONT_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/01-sx70-17-nov-2020-back-1800px-srgb-a2538ee4.webp",
+          "alt": "01_SX70_17-Nov-2020_BACK_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/02-sx70-17-nov-2020-1430-front-1800px-srgb-0aa582db.webp",
+          "alt": "02_SX70_17-Nov-2020__1430_FRONT_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/03-sx70-23-nov-2020-0905-back-1800px-srgb-0b96f177.webp",
+          "alt": "03_SX70_23-Nov-2020__0905_BACK_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/02-sx70-17-nov-2020-front-1800px-srgb-7e0ccbc4.webp",
+          "alt": "02_SX70_17-Nov-2020_FRONT_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/01-sx70-21-nov-2020-0815-back-1800px-srgb-605d6fc7.webp",
+          "alt": "01_SX70_21-Nov-2020__0815_BACK_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/02-sx70-23-nov-2020-0905-front-1800px-srgb-13063c95.webp",
+          "alt": "02_SX70_23-Nov-2020__0905_FRONT_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/01-sx70-27-nov-2020-1537-back-1800px-srgb-b83c6892.webp",
+          "alt": "01_SX70_27-Nov-2020__1537_BACK_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/02-sx70-21-nov-2020-0815-front-1800px-srgb-1-c9c08b3f.webp",
+          "alt": "02_SX70_21-Nov-2020__0815_FRONT_1800px_sRGB_1.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/01-sx70-20201205-0035-1800px-srgb-c1bd9033.webp",
+          "alt": "01_SX70_20201205_0035_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/02-sx70-27-nov-2020-1007-front-1800px-srgb-5709d4bf.webp",
+          "alt": "02_SX70_27-Nov-2020__1007_FRONT_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/01-sx70-02-dec-2020-1337-back-1800px-srgb-8ba5b4d3.webp",
+          "alt": "01_SX70_02-Dec-2020_1337_BACK_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/02-sx70-20201205-0034-1800px-srgb-2873469f.webp",
+          "alt": "02_SX70_20201205_0034_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/01-sx70-05-dec-2020-1036-back-1800px-srgb-4dd13780.webp",
+          "alt": "01_SX70_05-Dec-2020_1036_BACK_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/02-sx70-02-dec-2020-1337-front-1800px-srgb-1-05d01e22.webp",
+          "alt": "02_SX70_02-Dec-2020_1337_FRONT_1800px_sRGB_1.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/01-sx70-07-dec-2020-1127-back-1800px-srgb-cfd43850.webp",
+          "alt": "01_SX70_07-Dec-2020_1127_BACK_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/02-sx70-05-dec-2020-1036-front-1800px-srgb-0301c422.webp",
+          "alt": "02_SX70_05-Dec-2020_1036_FRONT_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/01-sx70-12-nov-2020-1700-back-1800px-srgb-5def3d91.webp",
+          "alt": "01_SX70_12-Nov-2020_1700_BACK_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/02-sx70-07-dec-2020-1127-front-1800px-srgb-ea901609.webp",
+          "alt": "02_SX70_07-Dec-2020_1127_FRONT_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/01-sx70-19-dec-2020-1421-back-1800px-srgb-1d79dbc5.webp",
+          "alt": "01_SX70_19-Dec-2020_1421_BACK_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/02-sx70-19-dec-2020-1421-front-1800px-srgb-95bb9453.webp",
+          "alt": "02_SX70_19-Dec-2020_1421_FRONT_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/01-sx70-24-dec-2020-1636-back-1800px-srgb-a9534908.webp",
+          "alt": "01_SX70_24-Dec-2020_1636_BACK_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/02-sx70-24-dec-2020-1636-front-1800px-srgb-98b04226.webp",
+          "alt": "02_SX70_24-Dec-2020_1636_FRONT_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/01-sx70-25-dec-2020-1111-back-1800px-srgb-ed866874.webp",
+          "alt": "01_SX70_25-Dec-2020_1111_BACK_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/02-sx70-25-dec-2020-1111-front-1800px-srgb-75167d16.webp",
+          "alt": "02_SX70_25-Dec-2020_1111_FRONT_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/01-sx70-29-dec-2020-1634-back-1800px-srgb-eb451f83.webp",
+          "alt": "01_SX70_29-Dec-2020_1634_BACK_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/02-sx70-29-dec-2020-1634-front-1800px-srgb-d286149d.webp",
+          "alt": "02_SX70_29-Dec-2020_1634_FRONT_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/01-sx70-29-dec-2020-1311-back-1800px-srgb-034320e3.webp",
+          "alt": "01_SX70_29-Dec-2020_1311_BACK_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/02-sx70-29-dec-2020-1311-front-1800px-srgb-2bf6dc19.webp",
+          "alt": "02_SX70_29-Dec-2020_1311_FRONT_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/01-sx70-30-dec-2020-1032-back-1800px-srgb-8bcdee3b.webp",
+          "alt": "01_SX70_30-Dec-2020_1032_BACK_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        },
+        {
+          "src": "assets/photos/02-sx70-30-dec-2020-1032-front-1800px-srgb-e24ea71f.webp",
+          "alt": "02_SX70_30-Dec-2020_1032_FRONT_1800px_sRGB.jpg",
+          "width": 1800,
+          "height": 1800
+        }
+      ]
+    },
+    {
+      "slug": "about",
+      "title": "About",
+      "blocks": ["about-1.html", "about-2.html"],
+      "images": [
+        {
+          "src": "assets/photos/lisboa-03-2020-16-d8e99a17.webp",
+          "alt": "",
+          "width": 2284,
+          "height": 1535
+        },
+        {
+          "src": "assets/photos/federico-ienna-front-9a66b065.webp",
+          "alt": "",
+          "width": 1114,
+          "height": 632
+        }
+      ]
+    },
+    {
+      "slug": "words",
+      "title": "Words",
+      "published": false,
+      "blocks": ["words-1.html"],
+      "images": []
+    },
+    {
+      "slug": "albums",
+      "title": "Short Film",
+      "blocks": ["albums-1.html", "albums-2.html"],
+      "images": [
+        {
+          "src": "assets/photos/1200182-437d2828.webp",
+          "alt": "",
+          "width": 0,
+          "height": 0
+        }
+      ]
+    }
+  ]
+}

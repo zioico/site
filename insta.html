@@ -1,265 +1,90 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Instagram — Local Cache</title>
-
-  <!-- BEGIN SITE_HEAD_INCLUDES -->
-  <link rel="preconnect" href="https://images.squarespace-cdn.com">
-  <link rel="preconnect" href="https://use.typekit.net" crossorigin>
-  <link rel="preconnect" href="https://p.typekit.net" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel:ital,wght@0,400">
-  <link rel="stylesheet" type="text/css" href="https://static1.squarespace.com/static/sitecss/5ba583b4e8ba445131ad62da/75/4fd11f32c4aad9b01c9e624c/5c7fc59ce4966b8337d6a795/1362/site.css"/>
-  <link rel="stylesheet" href="assets/nocrop-slideshow.css">
-  <link rel="stylesheet" href="assets/site-fixes.css">
-  <!-- END SITE_HEAD_INCLUDES -->
-
-  <link rel="stylesheet" href="/assets/instagram/insta.css" />
-</head>
-
-<body>
-  <!-- BEGIN SITE_NAV -->
-  <header id="header">
-      <div id="logo" data-content-field="site-title">
-        
-        <h1 class="logo"><a href="index.html">Federico Maria Salvatore Ienna</a></h1>
-        
-        
-      </div>
-      <script type="module">
-        Y.use('squarespace-ui-base', function(Y) {
-          Y.all("#header .logo, #header .logo-subtitle").each(function (text) {
-            text.plug(Y.Squarespace.TextShrink, {
-              parentEl: Y.one('#header'),
-              triggerWidth: 750
-            });
-          });
-        });
-
-        // Show spinner on page load if loading bookmarked url
-        if (window.location.hash && window.location.hash !== '#') {
-          document.querySelector('body').className += ' index-loading';
-        }
-      </script>
-      <div id="topNav" data-content-field="navigation">
-<nav class="main-nav">
-  <ul>
-  
-  
-
-      <li class="gallery-collection active-link">
-
-        
-
-          
-            <a href="index.html">Home</a>
-          
-
-          
-
-
-        
-
-      </li>
-
-  
-
-      <li class="folder-collection">
-
-        
-          
-          <a onclick="">Projects</a>
-          <div class="subnav">
-            <ul>
-              
-                
-                  <li class="gallery-collection">
-                    <a href="https://www.federicoienna.com/in-other-words">In Other Words</a>
-                  </li>
-                
-                
-              
-                
-                  <li class="gallery-collection">
-                    <a href="us-and-them.html">Us and Them</a>
-                  </li>
-                
-                
-              
-                
-                  <li class="gallery-collection">
-                    <a href="https://www.federicoienna.com/enfim">Enfim</a>
-                  </li>
-                
-                
-              
-                
-                  <li class="gallery-collection">
-                    <a href="radiation.html">Radiation</a>
-                  </li>
-                
-                
-              
-                
-                  <li class="gallery-collection">
-                    <a href="https://www.federicoienna.com/notes-to-self">Notes to Self</a>
-                  </li>
-                
-                
-              
-            </ul>
-          </div>
-
-        
-
-      </li>
-
-  
-
-      <li class="page-collection">
-
-        
-
-          
-            <a href="albums.html">Short Film</a>
-          
-
-          
-
-
-        
-
-      </li>
-
-  
-
-      <li class="blog-collection">
-
-        
-
-          
-            <a href="https://www.federicoienna.com/words">Words</a>
-          
-
-          
-
-
-        
-
-      </li>
-
-  
-
-      <li class="page-collection">
-
-        
-
-          
-            <a href="insta.html">Instagram Feed</a>
-          
-
-          
-
-
-        
-
-      </li>
-
-  
-
-      <li class="page-collection">
-
-        
-
-          
-            <a href="https://www.federicoienna.com/about">About</a>
-          
-
-          
-
-
-        
-
-      </li>
-
-  
-
-      <li class="page-collection">
-
-        
-
-          
-            <a href="https://www.federicoienna.com/contact">Contact</a>
-          
-
-          
-
-
-        
-
-      </li>
-
-  
-  
-  
-  </ul>
-</nav>
-</div>
-
-    </header>
-  <!-- END SITE_NAV -->
-
-  <main class="page">
-    <section class="hero">
-      <div>
-        <h1>Instagram</h1>
-        <p>
-          Local cache from <strong>@zioico</strong>. Click any image to browse in a lightbox.
-        </p>
-      </div>
-
-      <div class="controls" aria-label="View controls">
-        <button class="btn" id="btn-grid" aria-pressed="true" type="button">Grid</button>
-        <button class="btn" id="btn-feed" aria-pressed="false" type="button">Feed</button>
-        <a class="btn" href="https://www.instagram.com/zioico/" target="_blank" rel="noopener">Open Instagram</a>
-      </div>
-    </section>
-
-    <div class="stories" id="ig-stories" aria-label="Stories"></div>
-
-    <div class="hr"></div>
-
-    <section class="grid" id="ig-grid" aria-label="Instagram posts"></section>
-
-    <div class="loading" id="ig-status">Loading…</div>
-    <div id="ig-sentinel" style="height: 1px;"></div>
-  </main>
-
-  <!-- Lightbox -->
-  <div class="lb" id="lb" aria-hidden="true">
-    <div class="lb-inner" role="dialog" aria-modal="true" aria-label="Instagram viewer">
-      <div class="lb-bar">
-        <div class="left">
-          <button class="lb-x" id="lb-close" type="button">Close</button>
-          <span class="kbd">Esc</span>
-          <span class="kbd">← →</span>
-        </div>
-        <div class="right">
-          <span id="lb-date" class="kbd"></span>
-          <a class="lb-a" id="lb-link" target="_blank" rel="noopener">View on Instagram</a>
-          <button class="lb-nav" id="lb-prev" type="button">Prev</button>
-          <button class="lb-nav" id="lb-next" type="button">Next</button>
-        </div>
-      </div>
-
-      <div class="lb-frame">
-        <img class="lb-img" id="lb-img" alt="" />
-      </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Instagram — Federico Maria Salvatore Ienna</title>
+    <meta name="description" content="Instagram — Photography, personal projects, and visual stories by Federico Maria Salvatore Ienna." />
+    <link rel="canonical" href="https://www.federicoienna.com/insta.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Instagram — Federico Maria Salvatore Ienna" />
+    <meta property="og:description" content="Instagram — Photography, personal projects, and visual stories by Federico Maria Salvatore Ienna." />
+    <meta property="og:url" content="https://www.federicoienna.com/insta.html" />
+    <meta property="og:image" content="https://www.federicoienna.com/assets/photos/ienna-federico-02-3a2c3c6d.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="/assets/fonts/abel-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/assets/site.css" />
+    <script src="/assets/site.js" defer></script>
+  </head>
+  <body class="insta">
+    <a class="skip-link" href="#main">Skip to photographs and content</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="site-title" href="/index.html">Federico Maria Salvatore Ienna</a>
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          hidden
+        >
+          Menu
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li class="projects-menu"><details><summary>Projects</summary><ul><li><a href="/in-other-words.html">In Other Words</a></li><li><a href="/us-and-them.html">Us and Them</a></li><li><a href="/enfim.html">Enfim</a></li><li><a href="/radiation.html">Radiation</a></li><li><a href="/notes-to-self.html">Notes to Self</a></li></ul></details></li>
+      <li><a href="/insta.html" aria-current="page">Instagram Feed</a></li>
+      <li><a href="/albums.html">Short Film</a></li><li><a href="/about.html">About</a></li>
+    </ul>
+        </nav>
+      </header>
+      <main id="main"><section class="instagram-feed" aria-labelledby="instagram-heading">
+      <div class="instagram-heading"><div><h1 id="instagram-heading">Instagram</h1><a class="instagram-handle" href="https://www.instagram.com/zioico/" target="_blank" rel="noopener noreferrer">@zioico</a></div><p class="feed-status">Saved selection · Latest post 22 December 2025</p></div>
+      <div class="feed-filters" aria-label="Filter Instagram posts" hidden><button data-filter="all" aria-pressed="true">All posts</button><button data-filter="photos" aria-pressed="false">Photographs</button><button data-filter="reels" aria-pressed="false">Video &amp; reels</button></div>
+      <div class="instagram-grid"><a class="instagram-post" href="https://www.instagram.com/p/DSkFh1qjNWR/" data-post-index="0" data-media-type="IMAGE" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 1"><img src="/assets/instagram/DSkFh1qjNWR.jpg" alt="Instagram photograph 1" loading="lazy" decoding="async" width="600" height="600"></a><a class="instagram-post" href="https://www.instagram.com/p/DSLMmLLAMhh/" data-post-index="1" data-media-type="IMAGE" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 2"><img src="/assets/instagram/DSLMmLLAMhh.jpg" alt="Instagram photograph 2" loading="lazy" decoding="async" width="600" height="600"></a><a class="instagram-post" href="https://www.instagram.com/p/DSK6QVcDKGx/" data-post-index="2" data-media-type="IMAGE" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 3"><img src="/assets/instagram/DSK6QVcDKGx.jpg" alt="Instagram photograph 3" loading="lazy" decoding="async" width="600" height="600"></a><a class="instagram-post" href="https://www.instagram.com/p/DR47nK_DNPE/" data-post-index="3" data-media-type="IMAGE" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 4"><img src="/assets/instagram/DR47nK_DNPE.jpg" alt="Instagram photograph 4" loading="lazy" decoding="async" width="600" height="600"></a><a class="instagram-post" href="https://www.instagram.com/p/DR2aZB9DKpf/" data-post-index="4" data-media-type="IMAGE" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 5"><img src="/assets/instagram/DR2aZB9DKpf.jpg" alt="Instagram photograph 5" loading="lazy" decoding="async" width="600" height="600"></a><a class="instagram-post" href="https://www.instagram.com/p/DRwxqpEjJJl/" data-post-index="5" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 6"><img src="/assets/instagram/DRwxqpEjJJl_1.jpg" alt="Instagram photograph 6" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/DRuFZqgDC05/" data-post-index="6" data-media-type="IMAGE" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 7"><img src="/assets/instagram/DRuFZqgDC05.jpg" alt="Instagram photograph 7" loading="lazy" decoding="async" width="600" height="600"></a><a class="instagram-post" href="https://www.instagram.com/p/CxVI5B5sx6v/" data-post-index="7" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 8"><img src="/assets/instagram/CxVI5B5sx6v_1.jpg" alt="Instagram photograph 8" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/CxGP5ksMOSc/" data-post-index="8" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 9"><img src="/assets/instagram/CxGP5ksMOSc_1.jpg" alt="Instagram photograph 9" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/Cl8dgEJstBW/" data-post-index="9" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 10"><img src="/assets/instagram/Cl8dgEJstBW_1.jpg" alt="Instagram photograph 10" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/ClwmEmqs4ZU/" data-post-index="10" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 11"><img src="/assets/instagram/ClwmEmqs4ZU_1.jpg" alt="Instagram photograph 11" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/Clv7KvlMOdx/" data-post-index="11" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 12"><img src="/assets/instagram/Clv7KvlMOdx_1.jpg" alt="Instagram photograph 12" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/ClvzjA_McO7/" data-post-index="12" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 13"><img src="/assets/instagram/ClvzjA_McO7_1.jpg" alt="Instagram photograph 13" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/CeltlxWtLE6/" data-post-index="13" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 14"><img src="/assets/instagram/CeltlxWtLE6_1.jpg" alt="Instagram photograph 14" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/CejQ76EMB2J/" data-post-index="14" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 15"><img src="/assets/instagram/CejQ76EMB2J_1.jpg" alt="Instagram photograph 15" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/CegQrp_M33Q/" data-post-index="15" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 16"><img src="/assets/instagram/CegQrp_M33Q_1.jpg" alt="Instagram photograph 16" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/CaFOi7NMLzF/" data-post-index="16" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 17"><img src="/assets/instagram/CaFOi7NMLzF_1.jpg" alt="Instagram photograph 17" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/CZ7L7BWIgiG/" data-post-index="17" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 18"><img src="/assets/instagram/CZ7L7BWIgiG_1.jpg" alt="Instagram photograph 18" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/CZ4VjmPMKOv/" data-post-index="18" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 19"><img src="/assets/instagram/CZ4VjmPMKOv_1.jpg" alt="Instagram photograph 19" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/CYj_K-6sfIg/" data-post-index="19" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 20"><img src="/assets/instagram/CYj_K-6sfIg_1.jpg" alt="Instagram photograph 20" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/CYW9Iv4MkZM/" data-post-index="20" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 21"><img src="/assets/instagram/CYW9Iv4MkZM_1.jpg" alt="Instagram photograph 21" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/CYUac_zMEWB/" data-post-index="21" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 22"><img src="/assets/instagram/CYUac_zMEWB_1.jpg" alt="Instagram photograph 22" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/CYRBiu8MP9Z/" data-post-index="22" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 23"><img src="/assets/instagram/CYRBiu8MP9Z_1.jpg" alt="Instagram photograph 23" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/CYOp31jMudO/" data-post-index="23" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 24"><img src="/assets/instagram/CYOp31jMudO_1.jpg" alt="Instagram photograph 24" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/CYMDgehMoS1/" data-post-index="24" data-media-type="IMAGE" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 25"><img src="/assets/instagram/CYMDgehMoS1.jpg" alt="Instagram photograph 25" loading="lazy" decoding="async" width="600" height="600"></a><a class="instagram-post" href="https://www.instagram.com/p/CYHGT4HMOFf/" data-post-index="25" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 26"><img src="/assets/instagram/CYHGT4HMOFf_1.jpg" alt="Instagram photograph 26" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/CYEq_gCMDwc/" data-post-index="26" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 27"><img src="/assets/instagram/CYEq_gCMDwc_1.jpg" alt="Instagram photograph 27" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/CYEWhiEsenq/" data-post-index="27" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 28"><img src="/assets/instagram/CYEWhiEsenq_1.jpg" alt="Instagram photograph 28" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/CX56lWfsGSB/" data-post-index="28" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 29"><img src="/assets/instagram/CX56lWfsGSB_1.jpg" alt="Instagram photograph 29" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a><a class="instagram-post" href="https://www.instagram.com/p/CX3jegKsmD9/" data-post-index="29" data-media-type="CAROUSEL_ALBUM" target="_blank" rel="noopener noreferrer" aria-label="Instagram photograph 30"><img src="/assets/instagram/CX3jegKsmD9_1.jpg" alt="Instagram photograph 30" loading="lazy" decoding="async" width="600" height="600"><span class="post-badge" aria-hidden="true">Album</span></a></div>
+      <p class="feed-empty" hidden>No posts in this selection.</p>
+      <button class="load-more" hidden>More photographs</button>
+      <p class="instagram-follow"><a href="https://www.instagram.com/zioico/" target="_blank" rel="noopener noreferrer">View posts, stories, and highlights on Instagram</a></p>
+    </section></main>
+      <footer class="site-footer">
+        <a
+          href="https://www.instagram.com/zioico/"
+          aria-label="@zioico on Instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            aria-hidden="true"
+          >
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle
+              cx="17.5"
+              cy="6.5"
+              r=".8"
+              fill="currentColor"
+              stroke="none"
+            />
+          </svg>
+        </a>
+      </footer>
     </div>
-  </div>
-
-  <script src="/assets/instagram/insta.js"></script>
-</body>
+    <dialog class="photo-dialog" aria-label="Photograph">
+      <button class="dialog-close" aria-label="Close photograph">Close</button>
+      <div class="dialog-content"></div>
+    </dialog>
+  </body>
 </html>

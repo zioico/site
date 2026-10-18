@@ -1,0 +1,12 @@
+# Keep development and unpublished content out of branch-based GitHub Pages builds.
+# The custom workflow publishes only dist/; these exclusions also protect the
+# website while the repository uses its existing main-branch publishing source.
+exclude:
+  - content
+  - templates
+  - tools
+  - dist
+  - README.md
+  - INSTAGRAM_SETUP.md
+  - AGENTS.md
+  - .private
